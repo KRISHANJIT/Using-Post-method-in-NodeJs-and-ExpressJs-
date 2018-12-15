@@ -1,0 +1,28 @@
+
+THE CODE SNIPPET TO BE EXECUTED:
+
+var express = require('express');
+var app = express();
+
+app.get('/hello', function(req, res){
+   res.send("Hello World!");
+});
+
+app.post('/hello', function(req, res){
+   res.send("You just called the post method at '/hello'!\n");
+});
+
+app.listen(3000);
+
+THE COMMAND REQUIRED TO RUN THE POST REQUEST ABOVE:
+C:\Users\John Doe\hello-world> cURL -X POST "http://localhost:3000/hello"
+ 
+THE ERROR SHOWN BY COMMAND WINDOW:
+'cURL' is not recognized as an internal or external command,
+operable program or batch file.
+
+PLATFORM
+WINDOWS 10 HOME EDITION 64-bit 
+
+SOLUTION FOR THE PROBLEM ?
+
